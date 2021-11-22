@@ -1,31 +1,27 @@
-* {
-  box-sizing: border-box;
+ul {
+  list-style: none;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+li {
+  border-bottom: 1px solid blanchedalmond;
+  text-align: left;
+  padding-left: 10px;
 }
 
-header {
-  background-color: lightskyblue;
-  width: 100%;
-  overflow: hidden;
-  height: 80px;
+.card-title {
+  font-size: 20px;
 }
 
-#city-search {
-  margin: 0;
-  padding: 0;
+img {
+  width: 100px;
+  height: 100px;
 }
 
-.container {
-  text-align: center;
-  margin: 0;
-}
-
-.search-field {
-  margin: 0;
-  padding: 0;
+.fiveDayColor {
+  padding: 20px;
+  background-color: black;
+  color: white;
   float: left;
+  margin: 10px;
+  border: 1px solid lightgray;
 }
