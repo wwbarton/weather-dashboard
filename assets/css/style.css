@@ -1,0 +1,12 @@
+body {
+  background-color: firebrick;
+  margin: 0;
+  padding: 0%;
+}
+
+header {
+  background-color: lightskyblue;
+  width: 100%;
+  overflow: hidden; /* contain floats */
+  height: 150px;
+}
