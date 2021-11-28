@@ -1,6 +1,3 @@
-var openWeatherApi =
-  "https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={1e379fefcd27ae82381c513757c74b03}";
-
 var startDate = moment().format("M/DD/YYYY");
 var day1 = moment().add(1, "days").format("M/DD/YYYY");
 var day2 = moment().add(2, "days").format("M/DD/YYYY");
@@ -47,6 +44,7 @@ $(document).ready(function () {
         "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png"; //icon url
       var lat = response.coord.lat;
       var lon = response.coord.lon;
+
       $("#dailyWeather").append(
         "<div class='col s12 m6'>" +
           "<h2 class='daily'>" +
@@ -76,6 +74,7 @@ $(document).ready(function () {
           "</ul>" +
           "</div>"
       );
+
       var fiveDay =
         "https://api.openweathermap.org/data/2.5/onecall?" +
         "lat=" +
@@ -137,6 +136,7 @@ $(document).ready(function () {
             "5-Day Forecast:" +
             "</h2>"
         );
+
         $("#day1").append(
           "<div class='fiveDayCard card col s12 m6'>" +
             "<div class='card-body'>" +
@@ -160,6 +160,7 @@ $(document).ready(function () {
             "</div>" +
             "</div>"
         );
+
         $("#day2").append(
           "<div class='fiveDayCard card col s12 m6'>" +
             "<div class='card-body'>" +
@@ -183,6 +184,7 @@ $(document).ready(function () {
             "</div>" +
             "</div>"
         );
+
         $("#day3").append(
           "<div class='fiveDayCard card col s12 m6'>" +
             "<div class='card-body'>" +
