@@ -1,7 +1,7 @@
 # weather-dashboard
 
 ##Screenshot
-![](images\Dashboard-screenshot.png)
+<img src="images/Dashboard-screenshot.png">
 
 ###Description
 
